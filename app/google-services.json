@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "129028585389",
+    "project_id": "mbti-d1433",
+    "storage_bucket": "mbti-d1433.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129028585389:android:5fa93756e26060addc5324",
+        "android_client_info": {
+          "package_name": "com.kwancorp.mbti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129028585389-6bn3pp2r8gm430vuqh9bvgk4m4fv9skj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfz3DhavMjPo21_H2ZKlRD3CBvQlRe74Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129028585389-6bn3pp2r8gm430vuqh9bvgk4m4fv9skj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
