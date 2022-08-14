@@ -1,5 +1,6 @@
 package com.kwancorp.mbti.ui.main
 
+import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -28,7 +29,10 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     val navController = rememberNavController()
-                    setupNavGraph(navController = navController)
+                    setupNavGraph(
+                        navController = navController,
+                        context = this
+                    )
                 }
             }
         }
@@ -36,7 +40,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun setupNavGraph(navController: NavHostController) {
+fun setupNavGraph(navController: NavHostController, context: Context) {
     NavHost(
         navController = navController,
         startDestination = Screen.Intro.type.name
@@ -46,7 +50,7 @@ fun setupNavGraph(navController: NavHostController) {
         }
 
         composable(route = Screen.Login.type.name) {
-            LoginScreen()
+            LoginScreen(context)
         }
     }
 }

@@ -21,7 +21,7 @@ android {
         vectorDrawables {
             useSupportLibrary true
         }
-
+        resValue("string", "KAKAO_SDK_SCHEME", properties.getProperty("kakao.sdk.scheme"))
         buildConfigField("String", "KAKAO_NATIVE_APP_KEY", properties.getProperty("kakao.native.app.key"))
     }
 
